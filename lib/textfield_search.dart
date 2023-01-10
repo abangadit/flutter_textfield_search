@@ -225,14 +225,14 @@ class _TextFieldSearchState extends State<TextFieldSearch> {
           GestureDetector(
             onTap: () {
               // clear the text field controller to reset it
-              widget.controller.clear();
+              //widget.controller.clear();
               setState(() {
                 itemsFound = false;
               });
               // reset the list so it's empty and not visible
               resetList();
               // remove the focus node so we aren't editing the text
-              FocusScope.of(context).unfocus();
+              //FocusScope.of(context).unfocus();
             },
             child: ListTile(
               title: Text('No matching items.'),
